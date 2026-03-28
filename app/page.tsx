@@ -8,7 +8,6 @@ import styles from "@/app/ui/home.module.css";
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col p-6">
-      {/*<div className={styles.shape} /> ESTO ES DE CSS MODULES*/}
       <div className="flex h-20 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-52">
         <AcmeLogo />
       </div>
@@ -23,6 +22,7 @@ export default function Page() {
             </a>
             , brought to you by Vercel.
           </p>
+          <div className={styles.shape} />
           <Link
             href="/login"
             className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
